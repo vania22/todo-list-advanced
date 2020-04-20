@@ -1,0 +1,83 @@
+.custom-view-container {
+    display: flex;
+    justify-content: flex-start;
+    cursor: default;
+    
+    & div:first-of-type {
+      width: auto;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+      white-space: nowrap;
+    }
+  
+    &:hover {
+      .custom-edit-button {
+        opacity: 0.3;
+      }
+    }
+  
+    .custom-edit-button {
+      background: #fff;
+      border: none;
+      margin-left: 5px;
+      margin-top: 15px;
+      opacity: 0;
+  
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.8;
+      }
+    }
+  
+    .custom-save-button {
+      padding: 8px 12px;
+      margin-right: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: #4DD599;
+  
+      &:hover {
+        background: darken(#4DD599, 6%);
+      }
+    
+      &:active {
+        background: darken(#4DD599, 10%);
+      }
+    }
+  
+    .custom-cancel-button {
+      padding: 8px 12px;
+      margin-right: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: #c4c4c4;
+  
+      &:hover {
+        background-color: darken(#c4c4c4, 5%); 
+      }
+  
+      &:active {
+        background-color: darken(#c4c4c4, 10%); 
+      }
+    }
+  
+    input, textarea {
+      width: 20vw;
+      background: #ffffff;
+      border: 1px solid #efefef;
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding: 8px 13px;
+    
+      &:hover {
+        border: 1px solid darken(#efefef, 10%);
+      }
+    
+      &:focus {
+        border: 1px solid darken(#efefef, 30%);
+      }
+    }
+  }

@@ -1,0 +1,55 @@
+.tasks{
+
+    &__add {
+        margin-top: 50px;
+
+        &-new {
+            display: flex;
+            align-items: center;
+            opacity: 0.6;
+            padding: 7px;
+            cursor: pointer;
+
+            svg {
+                margin-right: 8px;
+            }
+
+            &:hover {
+                opacity: 1;
+                
+            }
+        }
+    }
+
+    &__form-hidden {
+        display: none;
+    }
+
+    &__form {
+        position: relative;
+        bottom: 30px;
+        width: 20vw;
+
+        .button {
+            margin-top: 15px;
+            margin-right: 10px;
+            background-color: #4DD599;
+            border-radius: 4px;
+            color: #fff;
+            border: 0;
+            padding: 10px 20px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken(#4DD599, 5%); 
+            }
+        }
+
+        .form__cancel-button {
+            background-color: #c4c4c4;
+            &:hover {
+                background-color: darken(#c4c4c4, 5%); 
+            }
+        }
+    }
+}
